@@ -8,33 +8,34 @@ export default function Home() {
       <section className="relative overflow-hidden py-20 sm:py-32">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-32 h-80 w-80 animate-pulse rounded-full bg-gradient-to-r from-emerald-400 to-sky-500 opacity-20"></div>
-          <div className="animation-delay-2000 absolute -bottom-40 -left-32 h-80 w-80 animate-pulse rounded-full bg-gradient-to-r from-rose-400 to-amber-500 opacity-20"></div>
-          <div className="animate-spin-slow absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-sky-400 to-emerald-500 opacity-10"></div>
+          <div className="absolute -top-40 -right-32 h-80 w-80 animate-pulse rounded-full bg-gradient-to-r from-orange-400 to-red-500 opacity-20"></div>
+          <div className="animation-delay-2000 absolute -bottom-40 -left-32 h-80 w-80 animate-pulse rounded-full bg-gradient-to-r from-amber-400 to-orange-500 opacity-20"></div>
+          <div className="animate-spin-slow absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-r from-red-400 to-orange-500 opacity-10"></div>
         </div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <div className="animate-fade-in-up">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
-                Transform Your Product Strategy with
+                AI-Powered Interview Platform for
                 {' '}
-                <span className="animate-gradient-x bg-gradient-to-r from-emerald-500 via-sky-500 to-rose-500 bg-clip-text text-transparent">
-                  ProductLens AI
+                <span className="animate-gradient-x bg-gradient-to-r from-orange-500 via-red-500 to-amber-500 bg-clip-text text-transparent">
+                  Enterprise Recruiting
                 </span>
               </h1>
             </div>
             <div className="animate-fade-in-up animation-delay-300">
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Harness the power of artificial intelligence to analyze market trends,
-                understand customer needs, and make data-driven product decisions that drive growth.
+                Streamline your hiring process with automated AI interviews. Create custom
+                interview rounds, manage candidates at scale, and make data-driven hiring
+                decisions.
               </p>
             </div>
             <div className="animate-fade-in-up animation-delay-600 mt-10 flex items-center justify-center gap-x-6">
-              <Button size="lg" className="transform border-0 bg-gradient-to-r from-emerald-500 to-sky-500 text-white shadow-lg transition-all duration-300 hover:scale-105 hover:from-emerald-600 hover:to-sky-600 hover:shadow-xl" asChild>
-                <Link href="/apps">Get Started</Link>
+              <Button size="lg" className="transform border-0 bg-black text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-800 hover:shadow-xl" asChild>
+                <Link href="/apps">Start Free Trial →</Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-sky-500 text-sky-600 transition-all duration-300 hover:scale-105 hover:bg-sky-500 hover:text-white" asChild>
+              <Button variant="outline" size="lg" className="border-2 border-gray-300 text-gray-700 transition-all duration-300 hover:scale-105 hover:bg-gray-50" asChild>
                 <Link href="#">Watch Demo</Link>
               </Button>
             </div>
@@ -43,118 +44,149 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="relative overflow-hidden bg-gradient-to-r from-secondary/10 via-secondary/20 to-secondary/10 py-24">
-        {/* Background Animation */}
-        <div className="absolute inset-0">
-          <div className="animation-delay-1000 absolute top-20 left-10 h-32 w-32 animate-bounce rounded-full bg-gradient-to-r from-emerald-300 to-sky-300 opacity-30"></div>
-          <div className="animation-delay-2000 absolute right-10 bottom-20 h-24 w-24 animate-bounce rounded-full bg-gradient-to-r from-rose-300 to-amber-300 opacity-30"></div>
-        </div>
+      <section className="bg-gray-50 py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+            {/* Feature 1 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+                <svg className="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Enterprise Ready</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Multi-tenant architecture designed for large-scale recruiting operations.
+              </p>
+            </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="animate-fade-in-up mx-auto max-w-2xl text-center">
-            <h2 className="bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-              Everything you need to build better products
+            {/* Feature 2 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+                <svg className="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Bulk Candidate Management</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Upload candidate lists, send automated invitations, and track progress at scale.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+                <svg className="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Advanced Analytics</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Comprehensive dashboards with completion rates, performance metrics, and insights.
+              </p>
+            </div>
+
+            {/* Feature 4 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+                <svg className="h-8 w-8 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Secure & Compliant</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Enterprise-grade security with GDPR compliance and data protection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto mb-16 max-w-2xl text-center">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              How It Works
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Our AI-powered platform provides comprehensive insights to help you make informed product decisions.
-            </p>
           </div>
 
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              {/* Feature 1 */}
-              <div className="group animate-fade-in-up animation-delay-300 flex flex-col transition-all duration-500 hover:scale-105">
-                <div className="rounded-2xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-sky-50 p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
-                  <dt className="flex items-center gap-x-3 text-base leading-7 font-semibold text-foreground">
-                    <div className="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-gradient-to-r from-emerald-500 to-sky-500 transition-transform duration-300 group-hover:scale-110">
-                      <div className="h-3 w-3 rounded-full bg-white"></div>
-                    </div>
-                    Market Intelligence
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
-                    <p className="flex-auto">
-                      Get real-time insights into market trends, competitor analysis, and emerging opportunities
-                      to stay ahead of the curve.
-                    </p>
-                  </dd>
-                </div>
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:gap-16 lg:grid-cols-4">
+            {/* Step 1 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-black text-lg font-bold text-white">
+                1
               </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Upload Candidates</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Bulk upload candidate information including names, emails, and target positions.
+              </p>
+            </div>
 
-              {/* Feature 2 */}
-              <div className="group animate-fade-in-up animation-delay-600 flex flex-col transition-all duration-500 hover:scale-105">
-                <div className="rounded-2xl border border-sky-100 bg-gradient-to-br from-sky-50 to-rose-50 p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
-                  <dt className="flex items-center gap-x-3 text-base leading-7 font-semibold text-foreground">
-                    <div className="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-rose-500 transition-transform duration-300 group-hover:scale-110">
-                      <div className="h-3 w-3 rounded-full bg-white"></div>
-                    </div>
-                    Customer Insights
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
-                    <p className="flex-auto">
-                      Understand your customers' needs, preferences, and pain points through advanced
-                      sentiment analysis and behavioral data.
-                    </p>
-                  </dd>
-                </div>
+            {/* Step 2 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-black text-lg font-bold text-white">
+                2
               </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Create Interview Rounds</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Set up custom question banks, define time limits, and configure interview parameters.
+              </p>
+            </div>
 
-              {/* Feature 3 */}
-              <div className="group animate-fade-in-up animation-delay-900 flex flex-col transition-all duration-500 hover:scale-105">
-                <div className="rounded-2xl border border-rose-100 bg-gradient-to-br from-rose-50 to-amber-50 p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
-                  <dt className="flex items-center gap-x-3 text-base leading-7 font-semibold text-foreground">
-                    <div className="flex h-8 w-8 flex-none items-center justify-center rounded-full bg-gradient-to-r from-rose-500 to-amber-500 transition-transform duration-300 group-hover:scale-110">
-                      <div className="h-3 w-3 rounded-full bg-white"></div>
-                    </div>
-                    Predictive Analytics
-                  </dt>
-                  <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
-                    <p className="flex-auto">
-                      Leverage machine learning to predict product performance, identify risks,
-                      and optimize your product roadmap.
-                    </p>
-                  </dd>
-                </div>
+            {/* Step 3 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-black text-lg font-bold text-white">
+                3
               </div>
-            </dl>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Send Invitations</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Automated email invitations with unique links and temporary passwords for each candidate.
+              </p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="text-center">
+              <div className="mx-auto mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-black text-lg font-bold text-white">
+                4
+              </div>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Review & Shortlist</h3>
+              <p className="text-sm leading-relaxed text-gray-600">
+                Analyze results, compare candidates, and build your shortlist with detailed insights.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-background to-secondary/5 py-24">
-        {/* Floating Elements */}
-        <div className="absolute inset-0">
-          <div className="animate-float absolute top-10 left-1/4 h-20 w-20 rounded-full bg-gradient-to-r from-emerald-400 to-sky-400 opacity-20"></div>
-          <div className="animate-float animation-delay-1000 absolute right-1/4 bottom-10 h-16 w-16 rounded-full bg-gradient-to-r from-rose-400 to-amber-400 opacity-20"></div>
-          <div className="animate-float animation-delay-2000 absolute top-1/2 left-10 h-12 w-12 rounded-full bg-gradient-to-r from-sky-400 to-emerald-400 opacity-20"></div>
-        </div>
-
-        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+      <section className="bg-gray-50 py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-none">
-            <div className="animate-fade-in-up text-center">
-              <h2 className="bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-                Trusted by product teams worldwide
+            <div className="mb-16 text-center">
+              <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Trusted by HR teams worldwide
               </h2>
-              <p className="mt-4 text-lg leading-8 text-muted-foreground">
-                Join thousands of product managers who rely on ProductLens AI for strategic decisions.
+              <p className="text-lg text-gray-600">
+                Join thousands of companies who rely on InterviewPro for their hiring needs.
               </p>
             </div>
-            <dl className="mt-16 grid grid-cols-1 gap-4 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-              <div className="group animate-fade-in-up animation-delay-300 flex flex-col rounded-xl border border-emerald-100 bg-gradient-to-br from-emerald-50 to-sky-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <dt className="text-sm leading-6 font-semibold text-emerald-600">Companies</dt>
-                <dd className="order-first bg-gradient-to-r from-emerald-600 to-sky-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent transition-transform duration-300 group-hover:scale-110">2,500+</dd>
+            <dl className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 lg:grid-cols-4">
+              <div className="flex flex-col">
+                <dt className="mb-2 text-sm font-semibold text-gray-600">Companies</dt>
+                <dd className="text-4xl font-bold text-gray-900">2,500+</dd>
               </div>
-              <div className="group animate-fade-in-up animation-delay-600 flex flex-col rounded-xl border border-sky-100 bg-gradient-to-br from-sky-50 to-rose-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <dt className="text-sm leading-6 font-semibold text-sky-600">Product Insights</dt>
-                <dd className="order-first bg-gradient-to-r from-sky-600 to-rose-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent transition-transform duration-300 group-hover:scale-110">1M+</dd>
+              <div className="flex flex-col">
+                <dt className="mb-2 text-sm font-semibold text-gray-600">Interviews Conducted</dt>
+                <dd className="text-4xl font-bold text-gray-900">1M+</dd>
               </div>
-              <div className="group animate-fade-in-up animation-delay-900 flex flex-col rounded-xl border border-rose-100 bg-gradient-to-br from-rose-50 to-amber-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <dt className="text-sm leading-6 font-semibold text-rose-600">Time Saved</dt>
-                <dd className="order-first bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent transition-transform duration-300 group-hover:scale-110">40%</dd>
+              <div className="flex flex-col">
+                <dt className="mb-2 text-sm font-semibold text-gray-600">Time Saved</dt>
+                <dd className="text-4xl font-bold text-gray-900">40%</dd>
               </div>
-              <div className="group animate-fade-in-up animation-delay-1200 flex flex-col rounded-xl border border-amber-100 bg-gradient-to-br from-amber-50 to-emerald-50 p-8 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <dt className="text-sm leading-6 font-semibold text-amber-600">Success Rate</dt>
-                <dd className="order-first bg-gradient-to-r from-amber-600 to-emerald-600 bg-clip-text text-3xl font-bold tracking-tight text-transparent transition-transform duration-300 group-hover:scale-110">95%</dd>
+              <div className="flex flex-col">
+                <dt className="mb-2 text-sm font-semibold text-gray-600">Success Rate</dt>
+                <dd className="text-4xl font-bold text-gray-900">95%</dd>
               </div>
             </dl>
           </div>
@@ -162,41 +194,28 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-emerald-600 via-sky-600 to-rose-600">
-        {/* Animated Background */}
-        <div className="absolute inset-0">
-          <div className="animate-gradient-x absolute top-0 left-0 h-full w-full bg-gradient-to-r from-emerald-600/50 via-sky-600/50 to-rose-600/50"></div>
-          <div className="absolute -top-24 -right-24 h-48 w-48 animate-pulse rounded-full bg-white/10"></div>
-          <div className="animation-delay-1000 absolute -bottom-24 -left-24 h-64 w-64 animate-pulse rounded-full bg-white/5"></div>
-          <div className="animate-spin-slow absolute top-1/2 left-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-white/5"></div>
-        </div>
-
-        <div className="relative px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
+      <section className="bg-black py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="animate-fade-in-up">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Ready to revolutionize your product strategy?
-              </h2>
-            </div>
-            <div className="animate-fade-in-up animation-delay-300">
-              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-white/90">
-                Start making smarter product decisions today with ProductLens AI.
-                Join thousands of product teams already using our platform.
-              </p>
-            </div>
-            <div className="animate-fade-in-up animation-delay-600 mt-10 flex items-center justify-center gap-x-6">
+            <h2 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Ready to transform your hiring process?
+            </h2>
+            <p className="mx-auto mb-10 max-w-xl text-lg leading-8 text-gray-300">
+              Start conducting AI-powered interviews today and make better hiring decisions faster.
+              Join thousands of companies already using our platform.
+            </p>
+            <div className="flex items-center justify-center gap-x-6">
               <Button
-                variant="secondary"
                 size="lg"
-                className="transform bg-white font-semibold text-emerald-600 shadow-lg transition-all duration-300 hover:scale-105 hover:bg-white/90 hover:shadow-xl"
+                className="bg-white font-semibold text-black shadow-lg transition-all duration-300 hover:bg-gray-100"
                 asChild
               >
-                <Link href="/signup">Start Free Trial</Link>
+                <Link href="/apps">Start Free Trial</Link>
               </Button>
               <Button
-                variant="ghost"
+                variant="outline"
                 size="lg"
-                className="border-2 border-white/30 text-white transition-all duration-300 hover:scale-105 hover:border-white hover:bg-white/10"
+                className="border-2 border-white text-black transition-all duration-300"
                 asChild
               >
                 <Link href="/contact">Contact Sales</Link>

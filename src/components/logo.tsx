@@ -1,4 +1,4 @@
-import { Sparkle } from '@phosphor-icons/react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/utils';
 
@@ -12,19 +12,19 @@ type LogoProps = {
 const sizeConfig = {
   sm: {
     icon: 'h-8 w-8',
-    sparkle: 16,
+    imageSize: 24,
     title: 'text-sm font-bold',
     subtitle: 'text-xs',
   },
   md: {
     icon: 'h-12 w-12',
-    sparkle: 24,
+    imageSize: 36,
     title: 'text-lg font-bold',
     subtitle: 'text-sm',
   },
   lg: {
     icon: 'h-16 w-16',
-    sparkle: 32,
+    imageSize: 48,
     title: 'text-2xl font-bold',
     subtitle: 'text-base',
   },
@@ -41,20 +41,26 @@ export const Logo = ({
   const logoContent = (
     <div className={cn('flex items-center gap-3', className)}>
       <div className={cn(
-        'flex items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 to-emerald-500 shadow-lg',
+        'flex items-center justify-center rounded-2xl',
         config.icon,
       )}
       >
-        <Sparkle size={config.sparkle} className="text-white" weight="duotone" />
+        <Image
+          src="/apple-touch-icon.png"
+          alt="InterviewPro Logo"
+          width={config.imageSize}
+          height={config.imageSize}
+          className="rounded-lg"
+        />
       </div>
 
       {showText && (
         <div className="flex flex-col">
           <div className={cn(config.title, 'text-foreground leading-tight')}>
-            ProductLens
+            InterviewPro
           </div>
           <div className={cn(config.subtitle, 'text-zinc-500 leading-tight')}>
-            Product Intelligence
+            Interview Preparation
           </div>
         </div>
       )}
